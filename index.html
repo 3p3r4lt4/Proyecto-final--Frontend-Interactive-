@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dragon Ball Characters</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <main class="db-app">
+    <div class="db-wrapper">
+      <header class="db-header">
+        <h1><i class="fas fa-dragon"></i> Dragon Ball Characters</h1>
+        <div class="db-stats">
+          <div class="db-favorites-counter">
+            <i class="fas fa-heart"></i>
+            <span id="favoritesCount">Favoritos: 0</span>
+          </div>
+          <div class="db-total-counter">
+            <i class="fas fa-users"></i>
+            <span id="totalCount">Total: 0</span>
+          </div>
+        </div>
+      </header>
+
+      <section id="charactersList" class="characters-list">
+        <!-- Los personajes se cargarán aquí dinámicamente -->
+      </section>
+
+      <div class="pagination">
+        <button id="firstPage" class="pagination-button">
+          <i class="fas fa-fast-backward"></i> Primero
+        </button>
+        <button id="prevPage" class="pagination-button">
+          <i class="fas fa-backward"></i> Anterior
+        </button>
+        <span id="currentPage" class="current-page">Página 1 de 1</span>
+        <button id="nextPage" class="pagination-button">
+          Siguiente <i class="fas fa-forward"></i>
+        </button>
+        <button id="lastPage" class="pagination-button">
+          Último <i class="fas fa-fast-forward"></i>
+        </button>
+      </div>
+
+      <div class="page-info">
+        <p>Mostrando <span id="itemsPerPage">8</span> personajes por página</p>
+      </div>
+    </div>
+
+    <div class="db-wrapper">
+      <div class="character-details">
+        <h2><i class="fas fa-info-circle"></i> Detalles del Personaje</h2>
+        <div class="details-card">
+          <img id="detailImage" src="https://placehold.co/300x300/3366CC/FFFFFF?text=Dragon+Ball" alt="Character Image" class="detail-image">
+          <div class="details-content">
+            <h3 id="detailName">Selecciona un personaje</h3>
+            <div class="detail-item">
+              <strong><i class="fas fa-venus-mars"></i> Género:</strong>
+              <span id="detailGender">-</span>
+            </div>
+            <div class="detail-item">
+              <strong><i class="fas fa-user-tag"></i> Raza:</strong>
+              <span id="detailRace">-</span>
+            </div>
+            <div class="detail-item">
+              <strong><i class="fas fa-bolt"></i> Ki:</strong>
+              <span id="detailKi">-</span>
+            </div>
+            <div class="detail-item">
+              <strong><i class="fas fa-universe"></i> Afiliación:</strong>
+              <span id="detailAffiliation">-</span>
+            </div>
+            <div class="detail-item">
+              <strong><i class="fas fa-birthday-cake"></i> Edad:</strong>
+              <span id="detailAge">-</span>
+            </div>
+            <div class="detail-item">
+              <strong><i class="fas fa-palette"></i> Color de pelo:</strong>
+              <span id="detailHairColor">-</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
